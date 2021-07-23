@@ -4,6 +4,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/spring-boot-swagger2/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-Security/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-Security/spring-boot-security/pom.xml" />
       </list>
     </option>
   </component>
