@@ -1,6 +1,7 @@
 package com.example.springbootswagger2.config;
 
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.annotations.ApiIgnore;
@@ -27,6 +28,8 @@ public class swagger2 {
                 .select()
 //                .apis(RequestHandlerSelectors.basePackage(SWAGGER_SCAN_BASE_PACKAGE))//包扫描
                 .apis(RequestHandlerSelectors.withMethodAnnotation(Api.class))//根据类扫描
+//                .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))//根据包扫描
+
                 .paths(PathSelectors.any()) // 可以根据url路径设置哪些请求加入文档，忽略哪些请求
                 .build();
     }
