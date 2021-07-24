@@ -7,13 +7,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="security" />
         <module name="spring-boot-swagger2" />
         <module name="springboot-Security" />
         <module name="spring-boot-Security" />
-        <module name="spring-boot-security" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="security" target="1.8" />
       <module name="spring-boot-security" target="1.8" />
       <module name="spring-boot-Security" target="1.5" />
       <module name="spring-boot-swagger2" target="1.8" />
@@ -22,6 +23,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="security" options="-parameters" />
       <module name="spring-boot-security" options="-parameters" />
       <module name="spring-boot-swagger2" options="-parameters" />
     </option>
