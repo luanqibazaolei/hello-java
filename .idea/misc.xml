@@ -6,6 +6,9 @@
         <option value="$PROJECT_DIR$/spring-boot-swagger2/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-Security/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-Security/security/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-zookeeper/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-zookeeper/provider/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-zookeeper/customer/pom.xml" />
       </list>
     </option>
   </component>

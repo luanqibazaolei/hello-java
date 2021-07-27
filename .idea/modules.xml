@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/dubbo-zookeeper/common/common.iml" filepath="$PROJECT_DIR$/dubbo-zookeeper/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-zookeeper/customer/customer.iml" filepath="$PROJECT_DIR$/dubbo-zookeeper/customer/customer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-zookeeper/dubbo-zookeeper.iml" filepath="$PROJECT_DIR$/dubbo-zookeeper/dubbo-zookeeper.iml" />
       <module fileurl="file://$PROJECT_DIR$/spark/infrastructure/infrastructure.iml" filepath="$PROJECT_DIR$/spark/infrastructure/infrastructure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-zookeeper/provider/provider.iml" filepath="$PROJECT_DIR$/dubbo-zookeeper/provider/provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-Security/security/security.iml" filepath="$PROJECT_DIR$/spring-boot-Security/security/security.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-Security/spring-boot-Security.iml" filepath="$PROJECT_DIR$/spring-boot-Security/spring-boot-Security.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-swagger2/spring-boot-swagger2.iml" filepath="$PROJECT_DIR$/spring-boot-swagger2/spring-boot-swagger2.iml" />

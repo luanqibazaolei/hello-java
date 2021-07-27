@@ -1,5 +1,7 @@
 package com.example.security.config;
 
+import com.example.security.filter.TokenAuthenticationFilter;
+import com.example.security.filter.TokenLoginFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -43,6 +45,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 // 其他所有请求需要身份认证
                 .anyRequest().authenticated().and()
                 .formLogin().loginPage("/login").and()
+//                .addFilter(new TokenAuthenticationFilter(authenticationManager()))
+//                .addFilter(new TokenLoginFilter(authenticationManager()))
 
                 .logout().permitAll();
     }
