@@ -9,10 +9,12 @@
         <option value="$PROJECT_DIR$/dubbo-zookeeper/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo-zookeeper/provider/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo-zookeeper/customer/pom.xml" />
+        <option value="$PROJECT_DIR$/rabbitmq/pom.xml" />
+        <option value="$PROJECT_DIR$/oauth2/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager">
+  <component name="ProjectRootManager" version="2" default="true">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
