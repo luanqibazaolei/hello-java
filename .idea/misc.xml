@@ -11,7 +11,14 @@
         <option value="$PROJECT_DIR$/dubbo-zookeeper/customer/pom.xml" />
         <option value="$PROJECT_DIR$/rabbitmq/pom.xml" />
         <option value="$PROJECT_DIR$/oauth2/pom.xml" />
+        <option value="$PROJECT_DIR$/mapperFacade/pom.xml" />
+        <option value="$PROJECT_DIR$/设计模式/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/spring-boot-Security/mapperFacade/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" default="true">

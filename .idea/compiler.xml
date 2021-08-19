@@ -7,12 +7,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="factory" />
         <module name="security" />
         <module name="springboot-Security" />
         <module name="common" />
         <module name="provider" />
+        <module name="mapperFacade" />
         <module name="spring-boot-swagger2" />
-        <module name="spring-boot-Security" />
         <module name="rabbitmq" />
         <module name="oss" />
         <module name="customer" />
@@ -22,6 +23,8 @@
       <module name="common" target="1.8" />
       <module name="customer" target="1.8" />
       <module name="dubbo-zookeeper" target="1.5" />
+      <module name="factory" target="1.5" />
+      <module name="mapperFacade" target="1.5" />
       <module name="oauth2" target="1.5" />
       <module name="oss" target="1.8" />
       <module name="provider" target="1.8" />
@@ -31,6 +34,7 @@
       <module name="spring-boot-Security" target="1.5" />
       <module name="spring-boot-swagger2" target="1.8" />
       <module name="springboot-Security" target="1.5" />
+      <module name="设计模式" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
