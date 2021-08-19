@@ -1,8 +1,0 @@
-spring:
-  rabbitmq:
-    host: zard1991.tpddns.cn
-    port: 5672
-    username: shen
-    password: 123456
-  application:
-    name: springcloud-server-bus-rabbitmq
