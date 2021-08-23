@@ -5,6 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>oss</artifactId>
+    <groupId>com.shen</groupId>
+    <version>0.0.1</version>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -56,6 +58,8 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
                 <version>2.2.2.RELEASE</version>
+                <scope>import</scope>
+                <type>pom</type>
             </dependency>
 
         </dependencies>
@@ -66,6 +70,14 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
             </plugin>
         </plugins>
     </build>
