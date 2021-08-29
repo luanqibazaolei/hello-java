@@ -38,7 +38,6 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         if (tbUser == null){
             throw new UsernameNotFoundException("username: "+username + "is not exist!");
         }
-
         List<GrantedAuthority> authorities = new ArrayList<>();
 
         List<TbPermission> permissions = permissionService.getByUserId(tbUser.getId());
@@ -47,10 +46,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
             authorities.add(new SimpleGrantedAuthority(tbPermission.getEname()));
         });
 
-
-
         return new User(tbUser.getUsername(), tbUser.getPassword(), authorities);
     }
-
 
 }

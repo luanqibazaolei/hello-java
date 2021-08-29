@@ -1,11 +1,18 @@
 package com.example.factory.User;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 @Service
 public class StrategySign {
 
     private User user;
+
+    @Autowired
+    private Map<String, User> map = new ConcurrentHashMap();
 
     public StrategySign() {
     }
@@ -14,12 +21,12 @@ public class StrategySign {
         this.user = user;
     }
 
-    public StrategySign(String type) {
-        if (type.equals("student")) {
-            this.user = new Student();
-        } else if (type.equals("teacher")) {
-            this.user = new Teacher();
-        }
+    public StrategySign(String type) throws Exception{
+        this.user= map.get(type);
+
+    }
+    public void getStrategy(String type)throws Exception{
+        this.user= map.get(type);
 
     }
 
@@ -33,5 +40,9 @@ public class StrategySign {
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    public void setMap(Map<String, User> map) {
+        this.map = map;
     }
 }

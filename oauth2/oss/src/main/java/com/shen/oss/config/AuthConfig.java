@@ -29,7 +29,6 @@ public class AuthConfig extends AuthorizationServerConfigurerAdapter {
     @Bean
     public BCryptPasswordEncoder passwordEncoder(){return new BCryptPasswordEncoder();}
 
-////    还没学
     @Bean
     public ClientDetailsService jdbcClientDetailsService(){return new JdbcClientDetailsService(dataSource);
     }
@@ -44,6 +43,7 @@ public class AuthConfig extends AuthorizationServerConfigurerAdapter {
                 .scopes("app")
 //                重定向地址
                 .redirectUris("https://www.baidu.com");
+//        从数据库中获取 client 对象
 //        clients.withClientDetails(jdbcClientDetailsService());
 
 
